@@ -1,0 +1,6 @@
+#App
+server.port=
+
+# jsp views
+spring.mvc.view.prefix=
+spring.mvc.view.suffix=
