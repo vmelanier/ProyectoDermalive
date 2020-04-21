@@ -1,5 +1,7 @@
 package com.dermalive.tienda.db;
 
+import com.dermalive.tienda.models.User;
+
 import org.hibernate.cfg.Configuration;
 
 public class HibernateConfig {
@@ -21,6 +23,8 @@ private static Configuration configure() {
     configuration = new Configuration();
 
     // Configure
+    configuration.addAnnotatedClass(User.class);
+    // ------
 
     return configuration;
     }
