@@ -4,3 +4,11 @@ server.port=
 # jsp views
 spring.mvc.view.prefix=
 spring.mvc.view.suffix=
+
+#jdbc
+spring.datasource.url =
+spring.datasource.username =
+spring.datasource.password =
+spring.jpa.database-platform =
+spring.jpa.show-sql =
+spring.jpa.hibernate.ddl-auto =
