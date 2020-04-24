@@ -1,29 +1,27 @@
 package com.dermalive.tienda.controllers;
 
-import com.dermalive.tienda.db.HibernateSession;
 import com.dermalive.tienda.models.User;
+import com.dermalive.tienda.services.UserService;
 
-import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeControllers {
 
+    @Autowired
+    private UserService service;
+
     @RequestMapping("/")
-    public String index (){
+    public String index(){
+        //return "index";
 
-        User user = new User ();
-        user.setFirstName("Migu");
-        user.setLastName("Ang");
-        user.setUsername("miguel.ang");
-        user.setPassword("123456789");
+        User user = new User();
+        user.setUsername("vmel");
+        user.setPassword("1234");
 
-        Session session = HibernateSession.open();
-        session.beginTransaction();
-        session.save(user);
-        session.getTransaction().commit();
-        session.close();
+        service.save(user);
 
         return "index";
     }
