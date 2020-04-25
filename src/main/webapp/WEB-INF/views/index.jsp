@@ -243,17 +243,10 @@ Footer{
     <img src="images/Logo.png" width="150" />  
     <nav>
         <ul>
-            <li><a href="Inicio.html"class="current">Inicio</a></li>
-            <li><a href="Conocenos.html">Conocenos</a></li>
-            <li class="submenu">
-                <a href="Tienda.html">Tienda</a>
-                <ul class="children">
-                    <li><a href="Rostro.html">Rostro</a></li>
-                    <li><a href="Cuerpo.html">Cuerpo</a></li>
-                    <li><a href="Manos.html">Manos</a></li>
-                </ul>
-            </li>
-            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="views"class="current">Inicio</a></li>
+            <li><a href="Conocenos">Conocenos</a></li>
+            <li><a href="Tienda">Tienda</a></li>
+            <li><a href="Contacto">Contacto</a></li>
         </ul>
     </nav>
   </center>
