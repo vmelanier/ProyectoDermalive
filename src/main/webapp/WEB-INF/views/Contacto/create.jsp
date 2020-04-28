@@ -22,7 +22,7 @@
 <body>
     <br>
     <center>
-<form action="/Contacto" method="post" class="form">
+<form action="/contact/nuevo/" method="post" class="form">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 
             <div class="form-group">
@@ -58,4 +58,4 @@
 <br>
 <footer>
         <h4> Dermalive 2019 </h4>
-</footer>
+</footer>   
