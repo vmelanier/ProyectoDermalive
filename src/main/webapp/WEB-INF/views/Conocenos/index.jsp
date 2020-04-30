@@ -16,6 +16,7 @@
             <li><a href="Conocenos" class="current">Conocenos</a></li>
             <li><a href="Tienda">Tienda</a></li>
             <li><a href="Contacto">Contacto</a></li>
+            <li><a href="Catalogo">Catálogo</a></li>
         </ul>
     </nav>  
 </center>

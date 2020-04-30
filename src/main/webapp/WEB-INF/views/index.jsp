@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/app.css">
-<script src="Reproductor.js"></script>
+<script src="js/Reproductor.js"></script>
 <style>
 body {
   background-image: url("images/fondo9.jpeg");
@@ -245,8 +246,9 @@ Footer{
         <ul>
             <li><a href="views"class="current">Inicio</a></li>
             <li><a href="Conocenos">Conocenos</a></li>
-            <li><a href="Tienda">Tienda</a></li>
+            <li><a href="Tienda">Sucursales</a></li>
             <li><a href="Contacto">Contacto</a></li>
+            <li><a href="Catalogo">Catálogo</a></li>
         </ul>
     </nav>
   </center>
@@ -254,7 +256,7 @@ Footer{
 <body>
     <section id=reproductor>
         <video id="medio" width="820" height="500">
-            <source src="/main/resources/static/js/VideoDermaLive.mp4" type="video/mp4">
+            <source src="js/VideoDermaLive.mp4" type="video/mp4">
         </video>
         <nav>
             <div id="botones">

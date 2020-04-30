@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -15,6 +16,7 @@
                     <li><a href="Conocenos">Conocenos</a></li>
                     <li><a href="Tienda">Tienda</a>
                     <li><a href="Contacto" class="current">Contacto</a></li>
+                    <li><a href="Catalogo">Catálogo</a></li>
                 </ul>
             </nav>  
           </center>
