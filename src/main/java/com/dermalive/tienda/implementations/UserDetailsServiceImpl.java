@@ -2,7 +2,10 @@ package com.dermalive.tienda.implementations;
 
 import java.util.HashSet;
 import java.util.Set;
- 
+
+import com.dermalive.tienda.models.User;
+import com.dermalive.tienda.services.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -17,15 +20,15 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserDetailsServiceImpl implements UserDetailsService {
  
     @Autowired
-    private AdministradoresService AdministradoresService;
+    private UserService UserService;
  
     @Override
     @Transactional(readOnly = true)
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Administradores administrador = AdministradoresService.findByUsername(username);
+    public UserDetails loadUserByUsername(String user) throws UsernameNotFoundException {
+        User administrador = UserService.findByUsername(user);
  
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
-        grantedAuthorities.add(new SimpleGrantedAuthority("administrador"));
+        grantedAuthorities.add(new SimpleGrantedAuthority("user"));
  
         return new org.springframework.security.core.userdetails.User(
             administrador.getUsername(),

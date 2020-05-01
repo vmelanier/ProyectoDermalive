@@ -6,6 +6,7 @@ public interface UserService {
 
     public User find(Long id);
     public Boolean save(User user);
+    public User findByUsername(String user);
 
 
 }
