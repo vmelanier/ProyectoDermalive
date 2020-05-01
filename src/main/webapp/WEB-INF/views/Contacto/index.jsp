@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/EstilosContacto.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/EstilosContacto.css">
     <header>
         <center>
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menu</a>
             </div>
-            <img src="images/Logo.png" width="150" />
+            <img src="/images/Logo.png" width="150" />
             <nav>
                 <ul>
                     <li><a href="views">Inicio</a></li>

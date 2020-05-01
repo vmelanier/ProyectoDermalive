@@ -1,29 +1,10 @@
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Rostro</title>
-<link rel="stylesheet" href="css/EstilosRostro.css">
-<header>
-    <center>
-            <div class="menu_bar">
-                                 <a href="#" class="bt-menu"></a>
-                             </div>
-                             <img src="images/Logo.png" width="150" />  
-                             <nav>
-                                 <ul>
-                                    <li><a href="views">Inicio</a></li>
-                                    <li><a href="Conocenos">Conocenos</a></li>
-                                    <li><a href="Tienda">Sucursales</a></li>
-                                    <li><a href="Contacto">Contacto</a></li>
-                                    <li><a href="Catalogo"class="current">Catálogo</a></li>
-                                 </ul>
-                             </nav>  
-</header>
-    </center>
-<body>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<t:main>  <jsp:attribute name="title">
+    <title>Rostro</title>
+</jsp:attribute><jsp:body>
     <div class="galeria">
         <h1>Productos para el rostro</h1>
         <div class="linea"></div>
@@ -252,7 +233,4 @@
 </div>
 </div>
 </div>
-</body>
-<footer>
-        <h4> Dermalive 2019 </h4>
-</footer>
+</jsp:body></t:main>
