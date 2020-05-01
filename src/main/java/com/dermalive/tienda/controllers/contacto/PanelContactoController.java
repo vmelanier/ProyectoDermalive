@@ -29,11 +29,15 @@ public class PanelContactoController {
     public String tienda (
         TiendaContactoPanel contactoPanel
     ){
+        System.out.println(contactoPanel);
 
         Apartado apartado = new Apartado();
         apartado.setTitle(contactoPanel.getTitle());
         apartado.setTelefono(contactoPanel.getTelefono());
         apartado.setEmail(contactoPanel.getEmail());
+
+        apartadoService.save(apartado);
+
         return "/Contacto/create";
     }
 

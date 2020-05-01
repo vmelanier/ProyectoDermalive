@@ -24,8 +24,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
  
     @Override
     @Transactional(readOnly = true)
-    public UserDetails loadUserByUsername(String user) throws UsernameNotFoundException {
-        User administrador = UserService.findByUsername(user);
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User administrador = UserService.findByUsername(username);
  
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         grantedAuthorities.add(new SimpleGrantedAuthority("user"));
