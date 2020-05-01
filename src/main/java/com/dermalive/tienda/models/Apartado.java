@@ -2,7 +2,7 @@ package com.dermalive.tienda.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "apartado")
 public class Apartado {
 
     @Id
@@ -23,17 +23,28 @@ public class Apartado {
         return id;
     }
 
-    public String setTitle(String title) {
+    public String getTitle() {
         return title;
 	}
 
-	public String setTelefono(String telefono) {
+	public String getTelefono() {
         return telefono;
 	}
 
-	public String setEmail(String email) {
+	public String getEmail() {
         return email;
 
+    }
+    public void setTitle(String title) {
+        this.title=title;
 	}
+
+	public void setTelefono(String telefono) {
+        this.telefono=telefono;
+	}
+
+	public void setEmail(String email) {
+        this.email=email;
+    }
 
 }
