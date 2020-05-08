@@ -6,7 +6,7 @@ public class StoreCatalogoForm {
 
 
 @NotEmpty(message = "El nombre del producto no puede estar vacio")
-String nombreProducto;
+String nombre_producto;
 
 @NotEmpty(message = "El precio del producto no puede estar vacio")
 String precio;
@@ -15,14 +15,14 @@ String precio;
 String sucursal;
 
 @NotEmpty(message = "La Url no puede estar vacia")
-String imagenUrl;
+String imagen_url;
 
-public String getNombreProducto() {
-    return nombreProducto;
+public String getNombre_producto() {
+    return nombre_producto;
 }
 
-public void setNombreProducto(String nombreProducto) {
-    this.nombreProducto = nombreProducto;
+public void setNombre_producto(String nombre_producto) {
+    this.nombre_producto = nombre_producto;
 }
 
 public String getPrecio() {
@@ -40,23 +40,23 @@ public String getSucursal() {
 public void setSucursal(String sucursal) {
     this.sucursal = sucursal;
 }
-public String getImagenUrl() {
-    return imagenUrl;
+
+public String getImagen_url() {
+    return imagen_url;
 }
 
-public void setImagenUrl(String imagenUrl) {
-    this.imagenUrl = imagenUrl;
+public void setImagen_url(String imagen_url) {
+    this.imagen_url = imagen_url;
 }
 
 @Override
 public String toString(){
     return String.format(
-        "StoreCatalogoForm [nombreProducto=%s,precio=%s,sucursal=%s,imagenUrl=%s",
-        nombreProducto,
+        "StoreCatalogoForm [nombre_producto=%s,precio=%s,sucursal=%s,imagen_url=%s",
+        nombre_producto,
 precio,
 sucursal,
-imagenUrl
+imagen_url
     );
 }
-
 }

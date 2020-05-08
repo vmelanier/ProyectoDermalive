@@ -1,27 +1,13 @@
-<%@ page language="java" contentType="text/html" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/EstilosConocenos.css">
-<header>
-    <center>
-   <div class="menu_bar">
-        <a href="#" class="bt-menu">Menú</a>
-    </div>
-    <img src="images/Logo.png" width="150" />  
-    <nav>
-        <ul>
-            <li><a href="views">Inicio</a></li>
-            <li><a href="Conocenos" class="current">Conocenos</a></li>
-            <li><a href="Tienda">Tienda</a></li>
-            <li><a href="Contacto">Contacto</a></li>
-            <li><a href="Catalogo">Catálogo</a></li>
-        </ul>
-    </nav>  
-</center>
-</header>
-<body>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+    
+    <t:main>
+        <jsp:attribute name="title">
+            <title>Conocenos</title>
+        </jsp:attribute>
+        <jsp:body>
   <h1>¿Quiénes Somos?</h1>
     <section>
         <article>
@@ -60,8 +46,5 @@
         <img src="images/cara3.jpg" width="400" align="right">
         <img src="images/cara5.jpg" width="250" align="left">
 </section>
-
-<footer>
-    Dermalive 2019
-</footer>
-</body>
+</jsp:body>
+</t:main>
