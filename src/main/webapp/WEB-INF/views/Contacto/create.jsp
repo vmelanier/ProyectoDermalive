@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/EstilosContacto.css">
-    <header>
-        <center>
-            <div class="menu_bar">
-                <a href="#" class="bt-menu">Menu</a>
-            </div>
-            <img src="images/Logo.png" width="150" />
-            <nav>
-                <ul>
-                    <li><a href="views">Inicio</a></li>
-                    <li><a href="Conocenos">Conocenos</a></li>
-                    <li><a href="Tienda">Tienda</a>
-                    <li><a href="Contacto" class="current">Contacto</a></li>
-                </ul>
-            </nav>  
-          </center>
-        </header>
-<body>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+    
+    <t:main>
+        <jsp:attribute name="title">
+            <title>Contacto</title>
+        </jsp:attribute>
+        <jsp:body>
     <br>
     <center>
 <form action="/contact/nuevo/" method="post" class="form">
@@ -47,15 +35,11 @@
             </div>
 
             <div class="form-group text-center">
-                <input type="submit" class="btn btn-primary" value="Crear nuevo contacto">
+                <input type="submit" class="btn btn-primary" value="Suscribete">
             </div>
         </form>
      <center>
-            <img src="images/banner.png"/>
+            <img src="/images/banner.png"/>
     </center>
-</body>
-<br>
-<br>
-<footer>
-        <h4> Dermalive 2019 </h4>
-</footer>   
+</jsp:body>
+</t:main>

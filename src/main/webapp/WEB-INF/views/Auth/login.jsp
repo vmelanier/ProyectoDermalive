@@ -14,24 +14,28 @@
                 ${errorMessage}
             </div>
         </c:if>
-        
+        <br>
+        <br>
+        <br>
             <form method="post" >
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-
+<center>
                 <div >
                     <label for="username">Username:</label>
                     <input type="text" name="username"
                         id="username">
                 </div>
-
+<br>
                 <div >
                     <label for="password">Contraseña:</label>
                     <input type="password" name="password"
                         id="password" >
                 </div>
+                <br>
+                <br>
 
-                <input type="submit" class="btn btn-primary btn-block" value="Iniciar sesión">
+                <input type="submit" class="btn btn-primary btn-block" value="Iniciar sesión" style='width:200px'>
             </form>
-
+        </center>
         </jsp:body>
     </t:panel>

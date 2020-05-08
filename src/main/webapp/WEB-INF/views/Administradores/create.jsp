@@ -8,7 +8,7 @@
         <title>Crear</title>
     </jsp:attribute>
     <jsp:body>
-         
+         <center>
         <spring:hasBindErrors name="catalogoForm">
             <div>
                <ul >
@@ -23,7 +23,7 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
             <div >
                 <div>
-                    <input type="text" name="nombreProducto" id="nombreProducto" value="" placeholder="Nombre del Producto" /> 
+                    <input type="text" name="nombre_producto" id="nombre_producto" value="" placeholder="Nombre del Producto" /> 
                 </div>
                 <div>
                     <input type="number" name="precio" id="precio" value="" placeholder="Precio" /> 
@@ -32,7 +32,7 @@
                     <input type="text" name="sucursal" id="sucursal" value="" placeholder="Sucursal" /> 
                 </div>
                 <div>
-                    <input type="text" name="imagenUrl" id="imagenUrl" value="" placeholder="URL de la imagen" /> 
+                    <input type="text" name="imagen_url" id="imagen_url" value="" placeholder="URL de la imagen" /> 
                 </div>
                 <div>
                     <input type="submit" value="Resgistrar Producto" class="primary" />
@@ -41,6 +41,6 @@
 
         </form>
 
-        
+    </center>
     </jsp:body>
 </t:panel>

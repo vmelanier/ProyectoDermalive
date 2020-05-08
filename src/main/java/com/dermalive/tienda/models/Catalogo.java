@@ -7,12 +7,12 @@ import javax.persistence.*;
 public class Catalogo {
     
     @Id
-    @Column(name="idProducto",updatable = false, nullable=false)
+    @Column(name="id_producto",updatable = false, nullable=false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idProducto;
+    private Long id_producto;
     
-    @Column(name="nombreProducto",nullable=false)
-    private String nombreProducto;
+    @Column(name="nombre_producto",nullable=false)
+    private String nombre_producto;
 
     @Column(name="precio",nullable=false)
     private String precio;
@@ -20,71 +20,58 @@ public class Catalogo {
     @Column(name="sucursal",nullable=false)
     private String sucursal;
     
-    @Column(name="imagenUrl",nullable=false)
-    private String imagenUrl;
+    @Column(name="imagen_url",nullable=false)
+    private String imagen_url;
     
     
     public Catalogo(){}
     
     public Catalogo(
-    String nombreProducto,
+    String nombre_producto,
     String precio,
     String sucursal,
-    String imagenUrl
+    String imagen_url
     ){
-    this.nombreProducto = nombreProducto;
+    this.nombre_producto = nombre_producto;
     this.precio = precio;
     this.sucursal = sucursal;
-    this.imagenUrl = imagenUrl;
+    this.imagen_url = imagen_url;
     }
 
+    public Long getId_producto() {
+        return id_producto;
+    }
 
-public Long getIdProducto() {
-    return idProducto;
-}
-    
+    public String getNombre_producto() {
+        return nombre_producto;
+    }
 
-public String getNombreProducto() {
-	return precio;
-}
+    public void setNombre_producto(String nombre_producto) {
+        this.nombre_producto = nombre_producto;
+    }
 
-public void setNombreProducto(String nombreProducto) {
-	this.nombreProducto = nombreProducto;
-}
+    public String getPrecio() {
+        return precio;
+    }
 
-public String getPrecio() {
-	return precio;
-}
+    public void setPrecio(String precio) {
+        this.precio = precio;
+    }
 
-public void setPrecio(String precio) {
-	this.precio = precio;
-}
+    public String getSucursal() {
+        return sucursal;
+    }
 
-public String getSucursal() {
-	return sucursal;
-}
+    public void setSucursal(String sucursal) {
+        this.sucursal = sucursal;
+    }
 
-public void setSucursal(String sucursal) {
-	this.sucursal = sucursal;
-}
+    public String getImagen_url() {
+        return imagen_url;
+    }
 
-public String getImagenUrl() {
-    return imagenUrl;
-}
-
-public void setImagenUrl(String imagenUrl) {
-    this.imagenUrl = imagenUrl;
-}
-
-
-
+    public void setImagen_url(String imagen_url) {
+		this.imagen_url = imagen_url;
+	}
 
 }
-
-
-
-
-
-
-
-

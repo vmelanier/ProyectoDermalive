@@ -52,11 +52,12 @@ public class AdminController {
         }
 
         Catalogo catalogo = new Catalogo(
-        catalogoForm.getNombreProducto(),
+        catalogoForm.getNombre_producto(),
         catalogoForm.getPrecio(),
         catalogoForm.getSucursal(),
-        catalogoForm.getImagenUrl()
+        catalogoForm.getImagen_url()
         );
+        catalogo.setImagen_url("https://dl.dropboxusercontent.com" + catalogoForm.getImagen_url());
         catalogoService.save(catalogo);
 
         attributes.addFlashAttribute("successMessage", "Producto creado exitosamente");
@@ -87,9 +88,10 @@ public class AdminController {
              }
              
             Catalogo catalogo = catalogoService.find(catalogoId);
-            catalogoForm.getNombreProducto();
-            catalogoForm.getPrecio();
-            catalogoForm.getSucursal();
+            catalogo.setNombre_producto(catalogoForm.getNombre_producto());
+            catalogo.setPrecio(catalogoForm.getPrecio());
+            catalogo.setSucursal(catalogoForm.getSucursal());
+            catalogo.setImagen_url(catalogoForm.getImagen_url());
             
         
             catalogoService.save(catalogo);
