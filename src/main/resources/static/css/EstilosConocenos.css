@@ -1,0 +1,209 @@
+body {
+    background-color:white;
+  }
+  div {
+      margin-top: 2px;
+      margin-right:0px;
+      margin-left:0px;
+      margin-bottom:25px;
+  }
+  * {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background-color: #3B791E;
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background: #8BF559;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#3B791E;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+nav li a:hover, nav li a.current { /* aplicamos esta regla para el :hover y para la clase current */
+    color: blue;   /* cambiamos el color de la fuente a amarillo */
+    background-color:#8BF559;
+}
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: #8BF559;;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}
+  h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgreen;
+    font-size: 1cm;
+  }
+  p{
+      font-family: 'Yrsa', serif;
+      color: black;
+  }
+section {
+    padding: 1em 1em 2em 1em; /* padding: top right bottom left */
+    font-family: "Book Antiqua";
+    font-size: medium;
+    color:black;
+}
+figure img {
+    float:left;
+    margin-right: 3em;
+}
+Footer{
+    Clear: both;
+    background-color: #e9e9fd;
+}
+h2{
+    font-family: 'Yrsa', serif;
+    color:gray;
+    font-size: 1cm;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkolivegreen;
+    font-size: large;
+}
+h4{
+    font-family: 'Yrsa', serif;
+    color: black;
+    font-size: medium;
+}
+h5{
+    font-family: 'Yrsa', serif;
+    color: #f366fd;
+    font-size: large;
+}
+h6{
+    font-family: 'Yrsa', serif;
+    color: black;
+    font-size: medium;
+}

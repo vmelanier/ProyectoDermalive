@@ -1,0 +1,244 @@
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background-color: #3B791E;
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background: #8BF559;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#3B791E;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: #8BF559;;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}
+
+nav li a:hover, nav li a.current { /* aplicamos esta regla para el :hover y para la clase current */
+    color: blue;   /* cambiamos el color de la fuente a amarillo */
+    background-color:#8BF559;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.galeria{
+	font-family: open sans;
+}
+
+.galeria h1{
+	text-align: center;
+	margin: 20px 0 15px 0;
+	font-weight: 300;
+}
+
+.linea{
+	border-top: 5px solid #3B791E;
+	margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+	display:flex;
+	width: 85%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-bottom:5px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(59, 121, 30, 0.637);
+	width:100%;
+	height: 0;
+	overflow: hidden;
+	transition: .5s ease;
+}
+
+.overlay h2{
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+
+.imagen:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+	.contenedor-imagenes{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.contenedor-imagenes{
+		width: 90%;
+	}
+	.contenedor-imagenes .imagen{
+		width: 48%;
+	}
+}
+
+@media screen and (max-width:450px){
+	h1{
+		font-size: 22px;
+	}
+	.contenedor-imagenes{
+		width: 98%;
+	}
+	.contenedor-imagenes .imagen{
+		width: 80%;
+	}
+}
